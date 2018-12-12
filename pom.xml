@@ -36,20 +36,12 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+        <!--thymeleaf依賴-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
 
-        <!--servlet(jsp)的依赖-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>
         <!--mybatis支持-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -72,13 +64,6 @@
             </plugin>
         </plugins>
         <resources>
-            <resource><!--jsp视图路径-->
-                <directory>src/main/webapp</directory>
-                <targetPath>META-INF/resources</targetPath>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>
             <resource><!--mybatis的xml相关-->
                 <directory>src/main/java</directory>
                 <includes>
